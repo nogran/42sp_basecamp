@@ -1,0 +1,10 @@
+
+.basecamp/
+.config/
+.gitconfig
+.local/
+.ssh/
+.vnc/
+.vscode/
+.bash_history
+
