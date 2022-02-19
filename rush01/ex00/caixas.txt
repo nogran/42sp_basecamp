@@ -1,0 +1,41 @@
+**Em um mapa 4 x 4, coloque caixas de tamanho 1 a 4 de modo que cada linha e
+coluna veja o número de caixas correto de todos os pontos de vista possíveis.
+
+Ex.
+Esq -> direita										esquerda <- direita 
+
+3 caixas vis(2,3,4)			2	3	1	4			1 caixa visivel(4)
+
+> ./rush-01 "col1up col2up col3up col4up col1down col2down col3down col4down row1left row2left
+row3left row4left row1right row2right row3right row4right"
+
+>./rush-01 "[4 3 2 1] [1 2 2 2] [4 3 2 1] [1 2 2 2]" | cat -e
+
+
+**Cada uma das vistas (duas por linha e duas por coluna) terá um valor dado, de 1
+a 4. O seu programa deve colocar as caixas corretamente, prestando atenção para
+ter apenas uma caixa de cada altura em cada linha e coluna.
+
+
+		col1up col2up col3up col4up
+				 4 3 2 1
+
+row1left	4	 1 2 3 4	 1	 row1right   (1 write linha por linha)
+row2left	3	 2 3 4 1	 2	 row2right
+row3left	2	 3 4 1 2	 2	 row3right
+row4left	1	 4 1 2 3	 2	 row4right
+
+				 1 2 2 2
+		col1down col2down col3down col4down
+
+
+4 vistas no total - 1 de cada lado (quadrado)
+16 caixas no total
+
+1) em qual caso vai dar erro?
+erro de input (espaco vazio, 0, char especial,numero negativo) -> ascii 1 a 4 (49 a 52)
+
+2) soma de linha e coluna tem que ser de 3 a 5
+
+
+
