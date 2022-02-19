@@ -1,0 +1,23 @@
+rush(6,4)
+
+OUTPUT	
+		x6,x5,x4,x3,x2,x1
+y4	y=y	ABBBBC
+y3		B    B
+y2		B    B
+y1		ABBBBC
+---------------------------------
+** Colunas **
+x= input colunas (column)
+y= input linhas (line)
+
+1) para y max (y=y && y=1)
+print A
+var_contador = contador (x-2)
+print C
+
+2) para 1 < x < xmax
+print B
+
+3) para y -1 > 1
+print B + variavel_contador + print B
